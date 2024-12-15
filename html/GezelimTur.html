@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Gezelim Tur</title>
+        <link rel="icon" type="image/x-icon" href="css/gezelim.png">
+        <link rel="stylesheet" href="css/tur.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head> 
+    <body>
+        <div class="topbar">
+            <div class="wrapper target">
+                <div class="left">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="center">
+                    <a href="GezelimTur.html">Anasayfa</a>
+                    <a href="Hakkımızda.html">Hakkımızda</a>
+                    <a href="UyeOl.html">Üye Ol</a>
+                    <a href="GirisYap.html">Giriş Yap</a>
+                </div>
+                <div class="right">
+                    <span>
+                        <img src="/public/joker.jpeg", alt="user">
+                    </span>
+                    <div class="searchEngine" id="searchEngine">
+                        <input type="text">
+                        <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header target">
+            <img src="css/gezelim.png">
+            <h1>Gezelim Tur</h1>
+            <h3>Ayrıcalıklı Tur Fırsatlarını Kaçırmayın</h3>
+        </header>
+        <div class="home">
+            <div class="wrapper">
+                <div class="forms">
+                    <div class="form">
+                        <h1>Sıradaki Turunuzu Bulun</h1>
+                        <form action="/action_page.php">
+                            <label for="Tours">Tur seçiniz:</label>
+                            <select id="Tours" name="Tours">
+                              <option value="Guneydogu">Güneydoğu Anadolu</option>
+                              <option value="Akdeniz">Akdeniz</option>
+                              <option value="Ege">Ege</option>
+                              <option value="Karadeniz">Karadeniz</option>
+                            </select>
+                        </form>
+                        <div class="calendar">
+                            <div class="calendar-header">
+                              <span class="month-picker" id="month-picker"> Eylül </span>
+                              <div class="year-picker" id="year-picker">
+                                <span class="year-change" id="pre-year">
+                                  <pre><</pre>
+                                </span>
+                                <span id="year">2024 </span>
+                                <span class="year-change" id="next-year">
+                                  <pre>></pre>
+                                </span>
+                              </div>
+                            </div>
+                      
+                            <div class="calendar-body">
+                              <div class="calendar-week-days">
+                                <div>Paz</div>
+                                <div>Pt</div>
+                                <div>Sal</div>
+                                <div>Çar</div>
+                                <div>Pe</div>
+                                <div>Cu</div>
+                                <div>Cmt</div>
+                              </div>
+                              <div class="calendar-days">
+                              </div>
+                            </div>
+                            <div class="calendar-footer">
+                            </div>
+                            <div class="date-time-formate">
+                              <div class="day-text-formate">Bugün</div>
+                              <div class="date-time-value">
+                                <div class="time-formate">01:41:20</div>
+                                <div class="date-formate">03 - ekim - 2024</div>
+                              </div>
+                            </div>
+                            <div class="month-list"></div>
+                        </div>
+                        <button class="btn btn-primary rounded-pill px-3" type="submit" style="margin-left: 500px; margin-top: 20px;">Turunuzu Arayın</button>  
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <script src="js\search.js"></script>
+        <script src="js\scroll.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
